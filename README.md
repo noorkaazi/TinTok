@@ -18,17 +18,17 @@ A desktop app built with electron that set a timer based on pan size. Complete w
 
 Install Node.js and npm:
 
-```bash
+
 node -v
 npm -v
 
 Initialize the project and install Electron:
 
-```bash
+
 npm init -y
 npm install electron --save-dev
 
 Start Application
 
-```bash
+
 npm start
