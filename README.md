@@ -26,9 +26,11 @@ Initialize the project and install Electron:
 
 
 npm init -y
+
 npm install electron --save-dev
 
-Start Application
+
+Start Application:
 
 
 npm start
