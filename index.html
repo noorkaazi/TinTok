@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TinTok</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div id="window-controls">
+    <img src="minimize.PNG" alt="minimize" id="min-btn" onclick="minimize()">
+    <img src="close.PNG" alt="close" id="close-btn" onclick="closeApp()">
+  </div>
+
+<div id="startPage">
+  <h1 style="color: rgb(179, 65, 95);" style="size:80em"><br><br><br><br>
+  Let's get bakin'
+   </h1>
+  <button onclick="goToSelect()"><img src="views/start.PNG" style="width: 100px; height: auto;" />
+</button>
+</div>
+
+<div id="selectPage" class="hidden">
+    <h3 style="color: rgb(179, 65, 95);"><br><br><br><br>What are we baking today?</h3>
+    <button id="muffins" onclick="startTimer('Muffins')"><img src="views/muffins.PNG"  style="width: 100px; height: auto;">MUFFINS</button>
+    <button id="8inch" onclick="startTimer('Circle8')"><img src="views/circle.PNG" style="width: 100px; height: auto;">8 INCH CIRCLE</button>
+    <button id="bundt" onclick="startTimer('Bundt')"><img src="views/bundt.PNG" style="width: 100px; height: auto;">BUNDT</button>
+    <button id="square" onclick="startTimer('Square')"><img src="views/square.PNG" style="width: 100px; height: auto;">SQUARE</button>
+    <button id="8inch" onclick="startTimer('Circle9')"><img src="views/circle.PNG" style="width: 100px; height: auto;">9 INCH CIRCLE</button>
+  </div>
+
+<div id="timerPage" class="hidden" style="color:  rgb(179, 65, 95)">
+
+  <img id="cakeAnimation" src="views/cake1.PNG" style="width: 300px; height: auto; z-index:0;">
+    <p id="timeDisplay" style="font-size: 32px; z-index: 1; position: relative; top: -20px" ></p>
+    <button id="ok" onclick="goToDone()"><img src="views/ok.PNG"  style="width: 100px; height: auto;"></button>
+</div>
+
+<div id="donePage" class="hidden"><br><br><br><br><img src="views/cupcake.PNG" style="width: 300px; height: auto;">
+    <button id="snooze" onclick="snooze()"><img src="views/snooze.PNG"  style="width: 100px; height: auto;">   </button>
+    <button id="ok" onclick="goToStart()"><img src="views/ok.PNG"  style="width: 100px; height: auto;"></button>
+</div>
+
+<script src="renderer.js"></script>
+</body>
+</html>
